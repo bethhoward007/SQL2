@@ -1,0 +1,80 @@
+#This project uses the following top movies data
+
+CREATE TABLE topmovies(
+   Rank        INTEGER,
+   Title       TEXT,
+   Studio      TEXT,
+   Worldwide   REAL,
+   Domestic    REAL,
+   DomesticPct REAL,
+   Overseas    REAL,
+   OverseasPct REAL,
+   Year        INTEGER
+);
+
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (42,'The Twilight Saga: Breaking Dawn Part 2','LG/S',829.70,292.30,0.35,537.40,0.65,2012);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (68,'The Twilight Saga: Breaking Dawn Part 1','Sum.',712.20,281.30,0.40,430.90,0.61,2011);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (69,'The Twilight Saga: New Moon','Sum.',709.80,296.60,0.42,413.20,0.58,2009);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (1,'Avatar','Fox',2788.00,760.50,0.27,2027.50,0.73,2009);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (48,'E.T.: The Extra-Terrestrial','Uni.',792.90,435.10,0.55,357.80,0.45,1982);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (39,'The Hunger Games: Catching Fire','LGF',864.90,424.70,0.49,440.20,0.51,2013);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (73,'The Twilight Saga: Eclipse','Sum.',698.50,300.50,0.43,398.00,0.57,2010);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (78,'Interstellar','Par.',672.70,188.00,0.28,484.70,0.72,2014);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (92,'Ratatouille','BV',623.70,206.40,0.33,417.30,0.67,2007);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (75,'The Hunger Games','LGF',691.20,408.00,0.59,283.20,0.41,2012);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (14,'Toy Story 3','BV',1063.20,415.00,0.39,648.20,0.61,2010);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (15,'Pirates of the Caribbean: On Stranger Tides','BV',1045.70,241.10,0.23,804.60,0.77,2011);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (16,'Jurassic Park','Uni.',1029.20,402.50,0.39,626.70,0.61,1993);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (17,'Star Wars: Episode I - The Phantom Menace','Fox',1027.00,474.50,0.46,552.50,0.54,1999);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (18,'Alice in Wonderland (2010)','BV',1025.50,334.20,0.33,691.30,0.67,2010);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (19,'The Hobbit: An Unexpected Journey','WB',1017.00,303.00,0.30,714.00,0.70,2012);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (20,'The Dark Knight','WB',1004.60,534.90,0.53,469.70,0.47,2008);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (21,'The Lion King','BV',987.50,422.80,0.43,564.70,0.57,1994);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (22,'Harry Potter and the Sorcerer''s Stone','WB',974.80,317.60,0.33,657.20,0.67,2001);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (23,'Despicable Me 2','Uni.',970.80,368.10,0.38,602.70,0.62,2013);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (24,'Pirates of the Caribbean: At World''s End','BV',963.40,309.40,0.32,654.00,0.68,2007);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (25,'The Hobbit: The Desolation of Smaug','WB',960.40,258.40,0.27,702.00,0.73,2013);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (26,'Harry Potter and the Deathly Hallows Part 1','WB',960.30,296.00,0.31,664.30,0.69,2010);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (27,'The Hobbit: The Battle of the Five Armies','WB',955.10,255.10,0.27,700.00,0.73,2014);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (28,'Harry Potter and the Order of the Phoenix','WB',939.90,292.00,0.31,647.90,0.69,2007);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (29,'Finding Nemo','BV',936.70,380.80,0.41,555.90,0.59,2003);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (30,'Harry Potter and the Half-Blood Prince','WB',934.40,302.00,0.32,632.50,0.68,2009);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (31,'The Lord of the Rings: The Two Towers','NL',926.00,342.60,0.37,583.50,0.63,2002);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (32,'Shrek 2','DW',919.80,441.20,0.48,478.60,0.52,2004);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (33,'Harry Potter and the Goblet of Fire','WB',896.90,290.00,0.32,606.90,0.68,2005);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (34,'Spider-Man 3','Sony',890.90,336.50,0.38,554.30,0.62,2007);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (35,'Ice Age: Dawn of the Dinosaurs','Fox',886.70,196.60,0.22,690.10,0.78,2009);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (36,'Harry Potter and the Chamber of Secrets','WB',879.00,262.00,0.30,617.00,0.70,2002);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (37,'Ice Age: Continental Drift','Fox',877.20,161.30,0.18,715.90,0.82,2012);
+INSERT INTO topmovies(Rank,Title,Studio,Worldwide,Domestic,DomesticPct,Overseas,OverseasPct,Year) VALUES (38,'The Lord of the Rings: The Fellowship of the Ring','NL',871.50,315.50,0.36,556.00,0.64,2001);
+
+
+#Use a select statement to find the SUM,MIN,AVG of the following stats(Domestic,OverseasPct,and Worldwide).
+SELECT * FROM topmovies;
+
+SELECT SUM(Domestic), AVG(OverseasPct), MIN(Worldwide) FROM topmovies;
+
+#Select movies by year in the data (using HAVING)?
+
+SELECT * FROM topmovies GROUP BY title HAVING year < 2000;
+
+#Find most popular movies by rank and setting parameters on those said ranks.
+SELECT Title, Rank
+FROM topmovies WHERE Rank >= 60 AND Rank <= 30;
+
+#Write a clause to group the data values that don’t exist yet (using CASE).
+
+SELECT Title, Rank,
+CASE 
+WHEN Rank <= 30 THEN "toptier_movies"
+WHEN Rank >= 60 THEN "midtier_movies"
+ELSE "lowtier_movies"
+END as "Movie Tiers"
+FROM topmovies 
+GROUP BY Rank;
+
+#Use a slect statment involving AND or OR.
+
+SELECT * 
+FROM topmovies 
+WHERE Rank >= 50 AND Year <= 2010;
