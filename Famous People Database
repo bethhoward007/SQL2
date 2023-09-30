@@ -1,0 +1,62 @@
+#For this project I chose my favorite musicians.
+
+#Then I created a table to show personal facts about the artists.
+
+CREATE TABLE famous_people (ID INTEGER PRIMARY KEY,
+name TEXT,
+home_town TEXT,
+birth_date TEXT,
+genre TEXT);
+
+#Then I performed analytics on the data using SQL
+
+#I inserted the data into the table using the following SQL.
+
+INSERT INTO famous_people VALUES (1,"SZA","Missouri", 11/08/1989,"R&B");
+INSERT INTO famous_people VALUES (2,"Post Malone","Texas",7/04/1995,"Hiphop/Rap");
+INSERT INTO famous_people VALUES (3,"Jordan Ward","Missouri", 03/26/1996, "R&B");
+INSERT INTO famous_people VALUES (4,"Drake","Toronto",11/24/1986,"Hiphop/Rap/R&B");
+INSERT INTO famous_people VALUES (5,"Lizzo","Michigan",04/27/1988,"Pop");
+
+
+#I created another table showing recent albums from the artists.
+
+
+CREATE TABLE recent_albums(ID INTEGER PRIMARY KEY,
+name_id INTEGER,
+title TEXT);
+
+INSERT INTO recent_albums VALUES (1,1,"SOS");
+INSERT INTO recent_albums VALUES (2,2,"AUSTIN");
+INSERT INTO recent_albums VALUES (3,3,"FORWARD");
+INSERT INTO recent_albums VALUES (4,4,"Her Loss");
+INSERT INTO recent_albums VALUES (5,5,"Special");
+
+
+#Created one more table about the tours and the price range of tickets for each artists.
+
+CREATE TABLE tours(ID INTEGER PRIMARY KEY,
+lowest_price TEXT,
+highest_price TEXT);
+
+INSERT INTO tours VALUES(1,84,1450);
+INSERT INTO tours VALUES(2,108,2100);
+INSERT INTO tours VALUES(3,29.50,60);
+INSERT INTO tours VALUES(4,360,3500);
+INSERT INTO tours VALUES(5,95,1675);
+
+#Next explored the data usig the following SQL.
+
+SELECT famous_people.name,recent_albums.name_id
+FROM famous_people
+JOIN recent_albums
+ON famous_people.id= recent_albums.name_id;
+
+SELECT title FROM recent_albums
+LEFT OUTER JOIN famous_people
+ON recent_albums.id = famous_people.name;
+
+SELECT home_town 
+FROM famous_people 
+GROUP BY name
+ORDER BY name;
