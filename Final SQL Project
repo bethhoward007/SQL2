@@ -1,0 +1,79 @@
+
+First I wanted to take a look at where most of the customers live.
+#1 SELECT firstname, country FROM chinook.customers;
+
+Next I wanted to see which customers lived in the USA.
+#2 SELECT firstname, lastname,customerid, country
+FROM chinook.customers
+WHERE country = 'USA';
+
+Then I took a look to see which customers resided in Canada.
+#3 SELECT * FROM chinook.customers
+WHERE country = 'Canada';
+
+Here I took a look at what the employees titles were.
+#4 SELECT firstname,title FROM chinook.employees;
+
+Then I looked to see which employees were in the IT department.
+#5 SELECT firstname, title
+FROM chinook.employees
+WHERE title LIKE 'IT%';
+
+Took a look to see the toal sales made by each agent.
+#6 SELECT emp.FirstName, emp.LastName,
+ROUND(SUM(Inv.Total), 2) as 'Total Sales' 
+FROM chinook.Employees emp
+
+JOIN chinook.Customers cust 
+ON cust.SupportRepId = emp.EmployeeId
+
+JOIN chinook.Invoices Inv 
+ON Inv.CustomerId = cust.CustomerId
+
+WHERE emp.Title = 'Sales Support Agent' 
+GROUP BY emp.FirstName;
+
+What were the total sales for 2010?
+#7 SELECT SUM(Total)
+FROM chinook.Invoices
+WHERE InvoiceDate BETWEEN '2010-01-01' AND '2010-12-31';
+
+Which employee made the most sales in 2010?
+#8 SELECT emp.FirstName, emp.LastName,
+ROUND(SUM(Inv.Total), 2) as 'Total Sales' 
+FROM chinook.Employees emp
+
+JOIN chinook.Customers cust 
+ON cust.SupportRepId = emp.EmployeeId
+
+JOIN chinook.Invoices Inv 
+ON Inv.CustomerId = cust.CustomerId
+
+WHERE emp.Title = 'Sales Support Agent' 
+AND Inv.InvoiceDate LIKE '2010%' 
+GROUP BY emp.FirstName
+ORDER BY (round(sum(Inv.Total), 2))  DESC LIMIT 1;
+
+Showing all the tracks,albumn name, meida type and genre.
+#9 SELECT t.Name AS 'Track Name', a.Title AS 'Album Title', m.Name AS 'Media Type', g.Name AS 'Genre'
+FROM chinook.tracks t
+JOIN chinook.Albums a 
+on a.AlbumId = t.AlbumId
+JOIN chinook.Media_Types m
+on m.MediaTypeId = t.MediaTypeId
+JOIN chinook.Genres g
+on g.GenreId = t.GenreId;
+
+How many invoices were made in 2010?
+#10 SELECT total, invoicedate
+FROM chinook.invoices
+WHERE invoicedate BETWEEN '2010-01-01' AND '2010-31-12';
+
+When were the employees hired?
+#11 SELECT employeeiD,Firstname,hiredate
+FROM chinook.employees
+GROUP BY hiredate;
+
+Where do most of the employees live?
+#12 SELECT firstname, address,city,state
+FROM chinook.employees;
